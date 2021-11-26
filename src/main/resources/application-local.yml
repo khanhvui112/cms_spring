@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;database=ecommerce
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: sa
+    password: FaTraining2021
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8888
+
+app:
+  auth:
+    secret-key: &$HFG@264kdh534UYR
+    expired-token-time: 3600
+    expired-remember-token-time: 86400
